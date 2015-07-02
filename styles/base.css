@@ -1,0 +1,86 @@
+.navigation {
+    width:960px;
+    margin:0 auto;
+}
+
+.navigation ul {
+    list-style: none;
+}
+
+.navigation li {
+    margin:0;
+    list-style:none;
+}
+
+.navigation a {
+    text-transform: uppercase;
+    text-decoration: none;
+    transition:all linear 0.2s;
+    background: #fff; 
+    color: #26acf5;
+}
+
+.navigation li:hover > a, .navigation .active>a {
+    color: #006395;
+}
+
+.navigation img {
+    width: 20px;
+    line-height: 0;
+}
+
+.navigation .image{
+    color: #26acf5;
+    background: #fff url('http://images.wikia.com/callofduty/images/archive/4/4e/20110227211000!Left_Arrow.png') no-repeat right center;
+    background-size: 20px 20px;
+} 
+
+.navigation > ul > li {
+    float: left;
+    display: inline-block;
+    position: relative;
+    font-size: 20px;
+}
+
+.navigation > ul > li > a {
+    padding:10px 40px;
+    display:inline-block;
+}
+
+.navigation > ul > li:hover > a, .navigation > ul > .active > a {
+    color: #26acf5;
+}
+
+.navigation li:hover .sublist {
+    z-index: 1;
+    opacity: 1;
+}
+
+.dropdown {
+    text-align: center;
+    width: 100%;
+    padding: 5px 0;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    opacity:0;
+    transition:opacity linear 0.15s;
+    border-radius: 5px;
+    border: 1px solid rgba(0,0,0,0.2)
+}
+
+.sublist li {
+    display: block;
+    font-size: 15px;
+}
+
+.sublist li a {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.sublist li a:hover, .sublist .active a {
+    color: #049cdb;
+    background: #F2F2F2;
+}

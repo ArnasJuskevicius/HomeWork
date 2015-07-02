@@ -1,0 +1,16 @@
+
+
+body {
+	background: #fff;
+}
+
+header {
+	background: #878787;
+	height: 46px;
+}
+
+.test {
+	height: 400px;
+	background:url('../images/guitar-1920.jpg') no-repeat center;
+	background-size: 100%;
+};
