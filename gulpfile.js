@@ -7,7 +7,6 @@ var gulp = require("gulp")
   , install = require("gulp-install")
   , runSequence = require("run-sequence")
   , del = require("del")
-
 /* Styles */
   , minifyCss = require("gulp-minify-css")
 
@@ -16,6 +15,8 @@ var gulp = require("gulp")
   , webpack = require("webpack")
   , webpackConfig = require("webpack-config")
     ;
+
+require('gulp-release-tasks')(gulp);
 
 function isProduction() {
     return gutil.env.production;
