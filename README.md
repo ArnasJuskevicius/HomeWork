@@ -29,6 +29,10 @@ $ npm install --global gulp
 Versioning
 use gulp tag to update, bower and packaged files. After that commit and set version
 
+```sh
+https://www.npmjs.com/package/gulp-release-tasks
+```
+
 ###Usage
 
 - Add bundle.js and dropdown.css from exmaple page, to your html file like this 
