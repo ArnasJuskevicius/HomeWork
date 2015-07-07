@@ -36,3 +36,8 @@ $ npm install --global gulp
 after that, update your menu by adding "class'es", as showed in exmaple.
 - navigation, dropdown, sublist and etc.
 use horizontal-menu or vertical-menu classes, to change menu layout.
+
+- I was using awesome-font for icons, you can add your icons, by using img tag, or use awesome font with <i> tag as showed in example.
+```sh
+http://fortawesome.github.io/Font-Awesome/
+```
