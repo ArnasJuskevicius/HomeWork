@@ -9,6 +9,7 @@ var gulp = require("gulp")
   , del = require("del")
 /* Styles */
   , minifyCss = require("gulp-minify-css")
+  , hash = require('gulp-hash-filename')
 
 /* Javascript */
   , gwebpack = require("gulp-webpack")
@@ -31,9 +32,8 @@ var appdir = "./app"
 
   , htmlGlob = path.join(appdir, "**", "*.html")
   , jsGlob = path.join(appdir, "**", "*.js")
-  , cssGlob = path.join(__dirname, "styles", "*.css")
-  , imagesGlob = path.join(__dirname, "images", "*")
-  , appConfigJs = path.join(appdir, "config.js")
+  , cssGlob = path.join(appdir, "**", "*.css")
+  , imagesGlob = path.join(appdir, "**", "*.jpg")
   , watchDelay = 500
 
   /* Webpack options */
@@ -56,11 +56,9 @@ gulp.task("static", function() {
     gulp.src([htmlGlob])
         .pipe(gulp.dest(targetdir));
     gulp.src([cssGlob])
-        .pipe(gulp.dest(path.join(targetdir, "styles")));
-    gulp.src([imagesGlob])
-        .pipe(gulp.dest(path.join(targetdir, "images")));
-    gulp.src(appConfigJs)
         .pipe(gulp.dest(targetdir));
+    gulp.src([imagesGlob])
+        .pipe(gulp.dest(targetdir));;
 });
 
 

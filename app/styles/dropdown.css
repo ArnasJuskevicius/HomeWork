@@ -1,0 +1,132 @@
+.horizontal-menu {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.vertical-menu {
+  margin: 0 auto;
+}
+
+.vertical-menu .navigation ul {
+  width: 220px;
+}
+
+.vertical-menu .navigation ul li{
+  float: none;
+}
+
+.navigation ul {
+ list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation ul li {
+  display: block;
+  position: relative;
+  float: left;
+  background: #fff; 
+  color: #26acf5;
+}
+
+
+.navigation li ul { 
+  display: none; 
+}
+.navigation li ul:after {
+  content: '';
+}
+
+.navigation ul li a {
+  width: 180px;
+  text-transform: uppercase;
+  display: block;
+  padding: 15px 20px;
+  text-decoration: none;
+  color: #26acf5;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.navigation ul li a:hover { 
+    transition:all linear 0.2s;
+    background: #D8D8D8; 
+    color: #006395;
+}
+
+
+.navigation li li { 
+	float: none; 
+}
+
+.navigation li:hover li a:hover { 
+    transition:all linear 0.2s;
+    background: #26acf5; 
+    color: #fff;
+}
+
+
+.navigation ul:after {
+  visibility: hidden;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.dropdown {
+    text-align: center;
+    width: 100%;
+    padding: 5px 0;
+    transition:opacity linear 0.15s;
+}
+
+.dropdown li ul {
+  display: none !important;
+}
+
+
+.dropdown li:hover > ul {
+  display: block !important;
+  position: absolute;
+}
+
+.sublist {    
+    width: 220px;
+    top: 0;
+    border: 1px solid rgba(0,0,0,0.2)
+}
+
+
+.sublist-left {
+  left: 100%;
+}
+
+.sublist-right {
+  right: 100%
+}
+
+.navigation .separator {
+    border: 1px solid #F2F2F2;
+}
+
+
+.small-image, .arrow-down {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+}
+
+.small-left {
+  left: 10px;
+}
+
+.small-right {
+    right: 10px;
+
+}
+
+.active {
+  background: #D8D8D8 !important;
+  display: block;
+}

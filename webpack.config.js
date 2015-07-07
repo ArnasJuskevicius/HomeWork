@@ -1,6 +1,7 @@
 "use strict";
 var path = require("path")
-  , webpack = require("webpack");
+  , webpack = require("webpack")
+  , HashPlugin = require('hash-webpack-plugin');
 
 var appdir = path.join(__dirname, "js")
   , targetdir = path.join(__dirname, "target")
@@ -18,29 +19,6 @@ module.exports = {
 
   output: {
     path: targetdir,
-    filename: "bundle.js"
+    filename: "bundle.js" 
   },
-
-  // module: {
-  //   loaders: [
-  //     { test: /\.js$/, exclude: /(node_modules|bower_components)/ }
-  //   ]
-  // },
-
-  resolve: {
-    root: ["bower_components"],
-    modulesDirectories: [nodedir, bowerdir],
-    alias: {
-      "gfCzApp$": "gfCzApp/app",
-      "gfCzApp": appdir,
-      "angular$": "gfCzApp/angular-exporter.js"
-    },
-    extensions: ["", ".webpack.js", ".web.js", ".module.js", ".js"],
-    plugins: [
-    new webpack.ResolverPlugin(
-        new webpack.ResolverPlugin.DirectoryDescriptionFilePlugin("bower.json", ["main"])
-    )
-  ]
-  },
-
 };
