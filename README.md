@@ -25,6 +25,9 @@ $ npm install --global gulp
 ```
 
 - if everything  build correctly will be add to target category, from there 
+- 
+Versioning
+use gulp tag to update, bower and packaged files. After that commit and set version
 
 ###Usage
 
